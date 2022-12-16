@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Formulario de encuesta de Jesus</h1>
+      <p id="description">Este formulario es un proyecto de certificacion para el curso de css y va a tratar acerca de que tan bueno eres programando.</p>
+      <form id="survey-form">
+        <fieldset class="field-one">
+            <label value="name-label" id="name-label" for="name">Nombre: <input value="name" id="name" type="text" placeholder="Ingrese su nombre" required/></label>
+            <label value="email-label" id="email-label" for="email">Correo: <input value="email" id="email" type="email" placeholder="example@exa.pl" required/></label>
+            <label value="number-label" id="number-label" for="number">Edad (mayor de 13): <input value="number" id="number" type="number" min="13" max="120" placeholder="13" value="13"/></label>
+            <label value="select-label" for="dropdown"> 
+                Que tan bueno eres programando?
+                <select id="dropdown" value="opcions" required>
+                    <option selected disabled>Elija una opcion</option>
+                    <option>Muy bueno</option>
+                    <option>Aceptable</option>
+                    <option>Tengo mucho por aprender</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="field-two">
+            <p>En que ambito de la programacion te gustaria estar?</p>
+            <label><input value="opcion-programing-1" name="opcion-programing" type="radio" value="frontend" required/> Frontend</label>
+            <label><input value="opcion-programing-2" name="opcion-programing" type="radio" value="backend"/ required> Backend</label>
+            <label><input value="opcion-programing-3" name="opcion-programing" type="radio" value="fullstack" required/> Fullstack</label>
+            <label><input value="opcion-programing-4" name="opcion-programing" type="radio" value="none" checked required/> Ninguno</label> 
+            <p>Que tecnologias conoces?</p>
+            <label><input name="opcion-learn" value="html" type="checkbox" /> HTML</label>
+            <label><input value="css" type="checkbox" /> CSS</label>
+            <label><input value="javascript" type="checkbox" /> JAVASCRIPT</label>
+            <label><input value="python" type="checkbox" /> PYTHON</label>
+            <label><input value="github" type="checkbox" /> GITHUB</label>
+            <label><input value="none" type="checkbox" checked /> Ninguna de las anteriores</label>
+            <label class="label-textarea" for="coments" value="coments">Que has aprendido hasta ahora?
+                <textarea value="coments-textarea" id="coments" name="coments" cols="30" rows="10" placeholder="He aprendido..." required></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit">
+        
+
+    </form>
+    </main>
+    
+  </body>
+</html>
