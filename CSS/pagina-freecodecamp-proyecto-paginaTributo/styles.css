@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 0;
+    width: 100%;
+    font-family: 'Roboto';
+}
+#main{
+    margin: 30px 5px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    margin: auto;
+    padding: 40px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+}
+#sub-title{
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+}
+#img-div{
+    width: 98%;
+    background: white;
+    margin: 0 10px;
+    padding: 5px 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    image-rendering: crisp-edges;
+}
+#img-caption{
+    text-align: center;
+    color: #333333;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+}
+#tribute-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tribute-info h3{
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    padding: 40px;
+
+}
+#tribute-info ul{
+    list-style: disc;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tribute-info ul li{
+    margin: 15px 0 0 0;
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 200;
+    line-height: 1.5;
+}
+#cite{
+    width: 40%;
+    padding: 40px 0 ;
+    display: flex;
+    flex-direction: column;
+}
+#cite cite{
+    margin-top: 20px;
+}
+#cite p,cite{
+    font-size: 14px;
+    color: #333333;
+    font-style: italic;
+    text-align: left;
+}
+#tribute-link {
+    text-decoration: underline;
+    color: #333333;
+}
