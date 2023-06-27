@@ -10,13 +10,13 @@
       <p id="description">Este formulario es un proyecto de certificacion para el curso de css y va a tratar acerca de que tan bueno eres programando.</p>
       <form id="survey-form">
         <fieldset class="field-one">
-            <label value="name-label" id="name-label" for="name">Nombre: <input value="name" id="name" type="text" placeholder="Ingrese su nombre" required/></label>
-            <label value="email-label" id="email-label" for="email">Correo: <input value="email" id="email" type="email" placeholder="example@exa.pl" required/></label>
-            <label value="number-label" id="number-label" for="number">Edad (mayor de 13): <input value="number" id="number" type="number" min="13" max="120" placeholder="13" value="13"/></label>
+            <label value="name-label" id="name-label" for="name">Nombre: <input value="" id="name" type="text" placeholder="Ingrese su nombre" required/></label>
+            <label value="email-label" id="email-label" for="email">Correo: <input value="" id="email" type="email" placeholder="example@exa.pl" required/></label>
+            <label value="number-label" id="number-label" for="number">Edad (mayor de 13): <input value="" id="number" type="number" min="13" max="120" placeholder="13" value="13"/></label>
             <label value="select-label" for="dropdown"> 
                 Que tan bueno eres programando?
-                <select id="dropdown" value="opcions" required>
-                    <option selected disabled>Elija una opcion</option>
+                <select id="dropdown" value="" required>
+                    <option selected disabled hidden>Elija una opcion</option>
                     <option>Muy bueno</option>
                     <option>Aceptable</option>
                     <option>Tengo mucho por aprender</option>
@@ -35,7 +35,7 @@
             <label><input value="javascript" type="checkbox" /> JAVASCRIPT</label>
             <label><input value="python" type="checkbox" /> PYTHON</label>
             <label><input value="github" type="checkbox" /> GITHUB</label>
-            <label><input value="none" type="checkbox" checked /> Ninguna de las anteriores</label>
+            <label><input value="none" type="checkbox" /> Ninguna de las anteriores</label>
             <label class="label-textarea" for="coments" value="coments">Que has aprendido hasta ahora?
                 <textarea value="coments-textarea" id="coments" name="coments" cols="30" rows="10" placeholder="He aprendido..." required></textarea>
             </label>
