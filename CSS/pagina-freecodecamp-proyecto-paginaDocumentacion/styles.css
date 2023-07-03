@@ -1,0 +1,18 @@
+.symbol{
+    color: #808080;
+}
+.number{
+    color: #FFA500;
+}
+.operator{
+    color: #0000FF;
+}
+.string{
+    color: #008000;
+}
+.comment{
+    color: #555555;
+}
+.bool{
+    color: #9933CC;
+}

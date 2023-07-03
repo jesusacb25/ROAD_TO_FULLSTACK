@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav id="navbar">
-            <header>Documentacion de Python</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentacion de Python</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+            <li><a class="nav-link" href="#Instalacion">Instalacion</a></li>
+            <li><a class="nav-link" href="#Sintaxis_básica">Sintaxis básica</a></li>
+            <li><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></li>
+            <li><a class="nav-link" href="#Estructuras_de_datos">Estructuras de datos</a></li>
+            <li><a class="nav-link" href="#texto">Funciones</a></li>
+            <li><a class="nav-link" href="#texto">Módulos y paquetes</a></li>
+            <li><a class="nav-link" href="#texto">Excepciones</a></li>
+            <li><a class="nav-link" href="#texto">Programaciòn orientada a objetos</a></li>
+            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
+            <li><a class="nav-link" href="#texto">IDE</a></li>
+            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
+            <li><a class="nav-link" href="#texto">Comunidad y recursos de aprendizaje</a></li>
+            <li><a class="nav-link" href="#texto">Aplicaciones de python</a></li>
+            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
+            <li><a class="nav-link" href="#texto">Futuro de python</a></li>
+
+
+
+
+
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <!-- cada section con la clase main-section debe contener 5 code, no cada uno-->
+        <!-- ademas deben haber almenos diez p en los section, tampoco cada uno-->
+        <section id="Introduccion" class="main-section">
+            <header>Introduccion</header>
+            <p>Python es un lenguaje de programación interpretado, de alto nivel y multiparadigma. Fue creado por Guido
+                van Rossum en 1991 y se ha convertido en uno de los lenguajes más populares en la actualidad. Python se
+                destaca por su sintaxis clara y legible, lo que facilita el desarrollo de programas y reduce la curva de
+                aprendizaje.</p>
+        </section>
+        <section id="Instalacion" class="main-section">
+            <header>Instalacion</header>
+            <p>Para utilizar Python, debes instalarlo en tu sistema. Puedes descargar la última versión de Python desde
+                el sitio web oficial de Python (https://www.python.org). La instalación es sencilla y se proporciona un
+                instalador para diferentes sistemas operativos, incluyendo Windows, macOS y Linux.
+
+                Una vez que hayas instalado Python, puedes abrir una terminal o línea de comandos y ejecutar el comando
+                python para acceder al intérprete interactivo de Python. Aquí puedes ingresar código Python directamente
+                y ver los resultados.</p>
+        </section>
+        <section id="Sintaxis_básica" class="main-section">
+            <header>Sintaxis_básica</header>
+            <p>La sintaxis de Python es clara y legible. Algunos aspectos básicos incluyen la declaración de variables,
+                estructuras de control (como if, for y while), funciones y clases. Python utiliza sangría (indentación)
+                en lugar de llaves para definir bloques de código, lo que ayuda a mantener la estructura del programa.
+                Ejemplo:
+            </p>
+            <pre>
+                <code>
+                    nombre <span class="symbol">= </span><span class="string">"John"</span>
+                    edad <span class="symbol">= </span><span class="number">30</span>
+                            
+                    <span class="operator">if</span> edad <span class="symbol">>=</span><span class="number"> 18</span><span class="symbol">:</span>
+                        print(nombre <span class="symbol">+</span><span class="string">" es mayor de edad"</span>)
+                    <span class="operator">else</span><span class="symbol">:</span>
+                        print(nombre <span class="symbol">+</span><span class="string">" es mayor de edad"</span>)        
+                </code>
+            </pre>
+        </section>
+        <section id="Tipos_de_datos" class="main-section">
+            <header>Tipos de datos</header>
+            <p>Python ofrece una amplia gama de tipos de datos, estos incluyen datos:
+            </p>
             <ul>
-                <li><a class="nav-link" href="#texto">Introduccion</a></li>
-                <li><a class="nav-link" href="#texto">Instalacion</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
-                <li><a class="nav-link" href="#texto">texto</a></li>
+                <li>Enteros</li>
+                <li>Numeros de punto flotante</li>
+                <li>Cadenas de texto</li>
+                <li>Booleanos</li>
+                <li>Listas</li>
+                <li>Tuplas</li>
+                <li>Conjuntos</li>
+                <li>Diccionarios</li>
             </ul>
-        </nav>
-        <main id="main-doc">
-            <!-- cada section con la clase main-section debe contener 5 code, no cada uno-->
-            <!-- ademas deben haber almenos diez p en los section, tampoco cada uno-->
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-                <code></code>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-                <code></code>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-                <code></code>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-                <code></code>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-                <code></code>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-            </section>
-            <section id="texto" class="main-section">
-                <header>texto</header>
-                <p></p>
-            </section>
-        </main>
-    </body>
+            <p>Los tipos de datos son dinámicos, lo que significa que no es necesario declarar explícitamente el tipo de
+                una variable. Ejemplo:</p>
+            <pre>
+                <code>
+                  <span class="comment"># Enteros</span>
+                  edad <span class="symbol">=</span> <span class="number">30</span>
+              
+                  <span class="comment"># Punto flotante</span>
+                  precio <span class="symbol">=</span> <span class="number">19.99</span>
+              
+                  <span class="comment"># Cadena de texto</span>
+                  nombre <span class="symbol">=</span> <span class="string">"John"</span>
+              
+                  <span class="comment"># Booleano</span>
+                  es_mayor_de_edad <span class="symbol">=</span> <span class="bool">True</span>
+              
+                  <span class="comment"># Lista</span>
+                  numeros <span class="symbol">=</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]
+              
+                  <span class="comment"># Tupla</span>
+                  coordenadas <span class="symbol">=</span> (<span class="number">10</span>, <span class="number">20</span>)
+              
+                  <span class="comment"># Conjunto</span>
+                  colores <span class="symbol">=</span> {<span class="string">"rojo"</span>, <span class="string">"verde"</span>, <span class="string">"azul"</span>}
+              
+                  <span class="comment"># Diccionario</span>
+                  persona <span class="symbol">=</span> {<span class="string">"nombre"</span>: <span class="string">"John"</span>, <span class="string">"edad"</span>: <span class="number">30</span>}
+                </code>
+              </pre>
+        </section>
+
+        <section id="Estructuras_de_datos" class="main-section">
+            <header>Estructuras de datos</header>
+            <p>Python proporciona varias estructuras de datos integradas, como:</p>
+            <ul>
+                <li>Listas</li>
+                <li>Tuplas</li>
+                <li>Conjuntos</li>
+                <li>Diccionarios</li>
+            </ul>
+            <p>Estas estructuras de datos son versátiles y permiten almacenar y manipular colecciones de elementos de
+                manera eficiente. Ejemplo:
+            </p>
+            <pre>
+                <code>
+                  <span class="comment"># Lista</span>
+                  frutas <span class="symbol">=</span> [<span class="string">"manzana"</span>, <span class="string">"plátano"</span>, <span class="string">"naranja"</span>]
+                  print(frutas[<span class="number">0</span>])  <span class="comment"># Imprime "manzana"</span>
+              
+                  <span class="comment"># Tupla</span>
+                  coordenadas <span class="symbol">=</span> (<span class="number">10</span>, <span class="number">20</span>)
+                  print(coordenadas[<span class="number">1</span>])  <span class="comment"># Imprime 20</span>
+              
+                  <span class="comment"># Conjunto</span>
+                  colores <span class="symbol">=</span> {<span class="string">"rojo"</span>, <span class="string">"verde"</span>, <span class="string">"azul"</span>}
+                  colores.add(<span class="string">"amarillo"</span>)
+                  print(colores)  <span class="comment"># Imprime {"rojo", "verde", "azul", "amarillo"}</span>
+              
+                  <span class="comment"># Diccionario</span>
+                  persona <span class="symbol">=</span> {<span class="string">"nombre"</span>: <span class="string">"John"</span>, <span class="string">"edad"</span>: <span class="number">30</span>}
+                  print(persona[<span class="string">"nombre"</span>])  <span class="comment"># Imprime "John"</span>
+                </code>
+            </pre>           
+        </section>
+        
+        <section id="texto" class="main-section">
+            <header>texto</header>
+            <p></p>
+            <code></code>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+        <section id="texto" class="main-section">
+            <header>texto</header>
+            <p></p>
+        </section>
+        <section id="texto" class="main-section">
+            <header>texto</header>
+            <p></p>
+        </section>
+        <section id="texto" class="main-section">
+            <header>texto</header>
+            <p></p>
+        </section>
+    </main>
+</body>
+
 </html>
