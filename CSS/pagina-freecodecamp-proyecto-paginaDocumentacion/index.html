@@ -14,20 +14,19 @@
         <ul>
             <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
             <li><a class="nav-link" href="#Instalacion">Instalacion</a></li>
-            <li><a class="nav-link" href="#Sintaxis_básica">Sintaxis básica</a></li>
+            <li><a class="nav-link" href="#Sintaxis_basica">Sintaxis basica</a></li>
             <li><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></li>
             <li><a class="nav-link" href="#Estructuras_de_datos">Estructuras de datos</a></li>
-            <li><a class="nav-link" href="#texto">Funciones</a></li>
-            <li><a class="nav-link" href="#texto">Módulos y paquetes</a></li>
-            <li><a class="nav-link" href="#texto">Excepciones</a></li>
-            <li><a class="nav-link" href="#texto">Programaciòn orientada a objetos</a></li>
-            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
-            <li><a class="nav-link" href="#texto">IDE</a></li>
-            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
-            <li><a class="nav-link" href="#texto">Comunidad y recursos de aprendizaje</a></li>
-            <li><a class="nav-link" href="#texto">Aplicaciones de python</a></li>
-            <li><a class="nav-link" href="#texto">Bibliotecas y frameworks</a></li>
-            <li><a class="nav-link" href="#texto">Futuro de python</a></li>
+            <li><a class="nav-link" href="#Funciones">Funciones</a></li>
+            <li><a class="nav-link" href="#Modulos_y_paquetes">Modulos y paquetes</a></li>
+            <li><a class="nav-link" href="#Excepciones">Excepciones</a></li>
+            <li><a class="nav-link" href="#Programacion_orientada_a_objetos">Programacion orientada a objetos</a></li>
+            <li><a class="nav-link" href="#Bibliotecas_y_frameworks">Bibliotecas y frameworks</a></li>
+            <li><a class="nav-link" href="#IDE">IDE</a></li>
+            <li><a class="nav-link" href="#Comunidad_y_recursos_de_aprendizaje">Comunidad y recursos de aprendizaje</a></li>
+            <li><a class="nav-link" href="#Aplicaciones_de_python">Aplicaciones de python</a></li>
+            <li><a class="nav-link" href="#Futuro_de_python">Futuro de python</a></li>
+            <li><a class="nav-link" href="#Referencias">Referencias</a></li>
 
 
 
@@ -45,18 +44,21 @@
                 destaca por su sintaxis clara y legible, lo que facilita el desarrollo de programas y reduce la curva de
                 aprendizaje.</p>
         </section>
+
         <section id="Instalacion" class="main-section">
             <header>Instalacion</header>
             <p>Para utilizar Python, debes instalarlo en tu sistema. Puedes descargar la última versión de Python desde
-                el sitio web oficial de Python (https://www.python.org). La instalación es sencilla y se proporciona un
+                el sitio web oficial de Python <a href="https://www.python.org"
+                    target="_blank">(https://www.python.org)</a>. La instalación es sencilla y se proporciona un
                 instalador para diferentes sistemas operativos, incluyendo Windows, macOS y Linux.
 
                 Una vez que hayas instalado Python, puedes abrir una terminal o línea de comandos y ejecutar el comando
                 python para acceder al intérprete interactivo de Python. Aquí puedes ingresar código Python directamente
                 y ver los resultados.</p>
         </section>
-        <section id="Sintaxis_básica" class="main-section">
-            <header>Sintaxis_básica</header>
+
+        <section id="Sintaxis_basica" class="main-section">
+            <header>Sintaxis basica</header>
             <p>La sintaxis de Python es clara y legible. Algunos aspectos básicos incluyen la declaración de variables,
                 estructuras de control (como if, for y while), funciones y clases. Python utiliza sangría (indentación)
                 en lugar de llaves para definir bloques de código, lo que ayuda a mantener la estructura del programa.
@@ -74,6 +76,7 @@
                 </code>
             </pre>
         </section>
+
         <section id="Tipos_de_datos" class="main-section">
             <header>Tipos de datos</header>
             <p>Python ofrece una amplia gama de tipos de datos, estos incluyen datos:
@@ -150,28 +153,173 @@
                   persona <span class="symbol">=</span> {<span class="string">"nombre"</span>: <span class="string">"John"</span>, <span class="string">"edad"</span>: <span class="number">30</span>}
                   print(persona[<span class="string">"nombre"</span>])  <span class="comment"># Imprime "John"</span>
                 </code>
-            </pre>           
+            </pre>
         </section>
-        
-        <section id="texto" class="main-section">
-            <header>texto</header>
-            <p></p>
-            <code></code>
+
+        <section id="Funciones" class="main-section">
+            <header>Funciones</header>
+            <p>Puedes definir tus propias funciones en Python utilizando la palabra clave def. Las funciones permiten
+                agrupar un conjunto de instrucciones en un bloque reutilizable. Puedes pasar argumentos a una función y
+                retornar valores utilizando la palabra clave return. Ejemplo:</p>
+            <pre>
+                <code>
+                    <span class="comment"># Definición de la función</span>
+                    <span class="operator">def</span> saludar(nombre):
+                        <span class="operator">return</span> <span class="string">"Hola, "</span> + nombre + <span class="string">"!"</span>
+                
+                    <span class="comment"># Llamada a la función</span>
+                    mensaje = saludar(<span class="string">"John"</span>)
+                    print(mensaje)  <span class="comment"># Imprime "Hola, John!"</span>
+                </code>
+            </pre>
+        </section>
+
+        <section id="Modulos_y_paquetes" class="main-section">
+            <header>Modulos y paquetes</header>
+            <p>
+                Python cuenta con un sistema de módulos y paquetes que permite organizar y reutilizar el código. Un
+                módulo es un archivo de Python que contiene definiciones y declaraciones. Un paquete es una
+                colección de módulos organizados en una jerarquía de directorios. Puedes importar módulos y paquetes
+                en tu programa utilizando la palabra clave 'import'. Ejemplo:
+            </p>
+            <pre>
+                <code>
+                    <span class="comment"># Importar un módulo</span>
+                    <span class="operator">import</span> math
+                
+                    <span class="comment"># Utilizar una función del módulo math</span>
+                    print(math.<span class="function">sqrt</span>(<span class="number">25</span>))  <span class="comment"># Imprime 5.0</span>
+                
+                    <span class="comment"># Importar una función específica de un módulo</span>
+                    <span class="operator">from</span> random <span class="operator">import</span> randint
+                
+                    <span class="comment"># Utilizar la función importada</span>
+                    numero_aleatorio = randint(<span class="number">1</span>, <span class="number">10</span>)
+                    print(numero_aleatorio)  <span class="comment"># Imprime un número aleatorio entre 1 y 10</span>
+                </code>
+            </pre>
+        </section>
+
+        <section id="Excepciones" class="main-section">
+            <header>Excepciones</header>
+            <p>Python maneja las excepciones utilizando bloques 'try-except'. Puedes capturar y manejar diferentes tipos
+                de excepciones para evitar que un programa se interrumpa inesperadamente. Además, Python proporciona la
+                posibilidad de lanzar excepciones personalizadas para manejar situaciones específicas. Ejemplo:</p>
+            <pre>
+                <code>
+                    <span class="operator">try</span>:
+                        resultado = <span class="number">10</span> / <span class="number">0</span>
+                    <span class="operator">except</span> ZeroDivisionError:
+                        print(<span class="string">"Error: división por cero"</span>)
+                </code>
+            </pre>
+        </section>
+
+        <section id="Programacion_orientada_a_objetos" class="main-section">
+            <header>Programacion orientada a objetos</header>
+            <p>Python es un lenguaje orientado a objetos, lo que significa que puedes definir clases y crear objetos que
+                encapsulen datos y funcionalidades relacionadas. Puedes utilizar:</p>
             <ul>
-                <li></li>
+                <li>Herencia</li>
+                <li>Polimorfismo</li>
+                <li>Encapsulamiento</li>
+                <li>Funciones</li>
             </ul>
+            <p>
+                para crear jerarquías de clases y estructurar tu código de manera más modular. Ejemplo:
+            </p>
+            <pre>
+                <code>
+                    <span class="comment"># Definir una clase</span>
+                    <span class="operator">class</span> Persona:
+                        <span class="operator">def</span> __init__(self, nombre, edad):
+                            self.nombre <span class="symbol">=</span> nombre
+                            self.edad <span class="symbol">=</span> edad
+                
+                        <span class="operator">def</span> saludar(self):
+                            print(<span class="string">"Hola, mi nombre es"</span>, self.nombre)
+                
+                    <span class="comment"># Crear un objeto de la clase Persona</span>
+                    persona <span class="symbol">=</span> Persona(<span class="string">"John"</span>, <span class="number">30</span>)
+                    persona.saludar()  <span class="comment"># Imprime "Hola, mi nombre es John"</span>
+                </code>
+            </pre>
         </section>
-        <section id="texto" class="main-section">
-            <header>texto</header>
-            <p></p>
+
+        <section id="Bibliotecas_y_frameworks" class="main-section">
+            <header>Bibliotecas y frameworks</header>
+            <p>Python cuenta con una amplia gama de bibliotecas y frameworks que extienden las capacidades del lenguaje.
+                Algunas bibliotecas populares incluyen:</p>
+            <ul>
+                <li>Numpy: para cáluclos numéricos</li>
+                <li>Pandas: para análisis de datos</li>
+                <li>Matplotlib: para visualización</li>
+                <li>TensorFlow: para aprendizaje automático</li>
+                <li>Django: para desarrollo web</li>
+                <li>Flask: para creación de aplicaciones web más pequeñas</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <pre>
+                <code>
+                    <span class="comment"># Utilizar la biblioteca NumPy</span>
+                    <span class="operator">import</span> numpy <span class="operator">as</span> np
+                
+                    <span class="comment"># Crear un array de NumPy</span>
+                    arr <span class="symbol">=</span> np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])
+                    print(arr)  <span class="comment"># Imprime [1 2 3 4 5]</span>
+                </code>
+            </pre>
         </section>
-        <section id="texto" class="main-section">
-            <header>texto</header>
-            <p></p>
+
+        <section id="IDE" class="main-section">
+            <header>IDE</header>
+            <p>Entornos de desarrollo integrados (IDE).
+                Existen varios entornos de desarrollo integrados populares para programar en Python, como:
+            </p>
+            <ul>
+                <li>PyCharm</li>
+                <li>Visual Studio Code</li>
+                <li>Jupyter Notebook</li>
+                <li>Spyder</li>
+            </ul>
+            <p>Estos entornos ofrecen características avanzadas, como
+                resaltado de sintaxis, depuración, autocompletado y administración de proyectos, para facilitar el
+                desarrollo de aplicaciones en Python.</p>
         </section>
-        <section id="texto" class="main-section">
-            <header>texto</header>
-            <p></p>
+
+        <section id="Comunidad_y_recursos_de_aprendizaje" class="main-section">
+            <header>Comunidad y recursos de aprendizaje</header>
+            <p>
+                Python cuenta con una gran comunidad de desarrolladores que comparten su conocimiento y colaboran en
+                proyectos de código abierto. Puedes encontrar una gran cantidad de recursos de aprendizaje, como
+                tutoriales, documentación oficial, libros y cursos en línea, que te ayudarán a dominar el lenguaje y sus
+                bibliotecas.
+        </section>
+
+        <section id="Aplicaciones_de_python" class="main-section">
+            <header>Aplicaciones de python</header>
+            <p>Python se utiliza en una amplia gama de aplicaciones, desde desarrollo web y scripting hasta análisis de
+                datos y aprendizaje automático. Es utilizado por grandes empresas y organizaciones en todo el mundo
+                debido a su eficiencia, escalabilidad y facilidad de uso.</p>
+        </section>
+
+        <section id="Futuro_de_python" class="main-section">
+            <header>Futuro de python</header>
+            <p>
+                Python continúa evolucionando y adaptándose a las necesidades cambiantes de la industria. La comunidad
+                de Python está activa y constantemente se están desarrollando nuevas bibliotecas y frameworks para
+                ampliar las capacidades del lenguaje. Además, Python ha ganado popularidad en el campo de la ciencia de
+                datos y el aprendizaje automático, y se espera que siga creciendo en estos campos en el futuro.
+
+                Estos son solo algunos aspectos destacados del lenguaje Python. A medida que explores y te sumerjas más
+                en el desarrollo en Python, descubrirás muchas más características y capacidades interesantes que pueden
+                ayudarte a crear aplicaciones poderosas y elegantes.
+            </p>
+        </section>
+
+        <section id="Referencias" class="main-section">
+            <header>Referencias</header>
+            <p>Toda la documentacion de esta pagina fue estraida de la documentacion oficial de <a href="https://docs.python.org/3/" target="_blank">Python</a></p>
         </section>
     </main>
 </body>
